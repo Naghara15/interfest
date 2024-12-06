@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navAtas {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 12px;
+}
+.gambar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gambar .foto {
+    width: 136px;
+    height: 209px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.gambar h1 {
+    color: white;
+    margin-left: 30px;
+    margin-top: -100px;
+}
+.gambar h4{
+    color: white;
+    margin-left: 160px;
+    margin-top: -100px;
+}
+#navAtas a .ig {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;  
+}
+#navAtas a .link {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    object-fit: cover;  
+}
+#papan {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+#navBawah {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 12px;
+}
+#navBawah a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+#navBawah a:hover {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+#navBawah a:active {
+    background-color: rgb(136, 252, 252);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+    justify-items: center;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 18px;
+    cursor: pointer;
+}
+.content a:active {
+    background-color: rgb(136, 252, 252);
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
